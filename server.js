@@ -11,3 +11,5 @@ app.use(express.urlencoded({ extended: false }));
 app.listen(PORT, function () {
     console.log(`Server now listening on PORT ${PORT}!`);
 });
+
+module.exports = app;

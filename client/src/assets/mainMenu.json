@@ -1,0 +1,36 @@
+[{
+    "name":"To-Do List",
+    "id":"toDo"
+},
+{
+    "name":"Managers",
+    "id":"managers"
+},
+{
+    "name":"Stores",
+    "id":"stores"
+},
+{
+    "name":"Message Board",
+    "id":"messageBoard"
+},
+{
+    "name":"Calendar",
+    "id":"calendar"
+},
+{
+    "name":"Repair & Maintenance",
+    "id":"repairAndMaintenance"
+},
+{
+    "name":"Caterings",
+    "id":"caterings"
+},
+{
+    "name":"Contacts",
+    "id":"contacts"
+},
+{
+    "name":"RFRG Info",
+    "id":"rfrgInfo"
+}]

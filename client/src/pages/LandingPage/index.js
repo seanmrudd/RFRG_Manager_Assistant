@@ -21,8 +21,6 @@ export default class LandingPage extends Component {
         })
     }
 
-    //Add Fade Out and then reroute to main menu
-
     render() {
         if (this.state.redirect) {
             return (
@@ -31,11 +29,13 @@ export default class LandingPage extends Component {
         }
 
         return (
-            <Animated animationIn="fadeIn slower" animationOut="fadeOut" isVisible={true}>
+            <Animated animationIn="fadeIn slower" animationOut="fadeOut slower" isVisible={true}>
                 <div>
-                    <h1>RFRG Manager Assistant</h1>
-                    <img src={Logo} alt="Logo"></img>
-                    <h5>a Shrudder Production</h5>
+                    <div className="fadeOut">
+                        <h1>RFRG Manager Assistant</h1>
+                        <img src={Logo} alt="Logo"></img>
+                        <h5>a Shrudder Production</h5>
+                    </div>
                 </div>
             </Animated>
         );

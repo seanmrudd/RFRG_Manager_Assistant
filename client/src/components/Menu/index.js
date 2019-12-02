@@ -7,13 +7,11 @@ import menuOptions from "../../assets/mainMenu.json";
 
 export default class Menu extends Component {
     state = {
-        menuOptions: [
-            menuOptions
-        ]
+        menuOptions
     }
 
     consoleLog = () => {
-        console.log(menuOptions)
+        console.log(this.state.menuOptions.map((option) => option))
     }
  
     render() {
@@ -23,8 +21,8 @@ export default class Menu extends Component {
                     <Row>
                         <Col>
                             <MenuButton
-                            id={menuOption.id}
                             key={menuOption.id}
+                            className={menuOption.className}
                             name={menuOption.name}
                             />
                         </Col>

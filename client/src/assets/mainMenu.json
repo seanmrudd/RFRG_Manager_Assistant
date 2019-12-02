@@ -1,36 +1,45 @@
 [{
+    "id": 1,
     "name":"To-Do List",
-    "id":"toDo"
+    "className":"toDo"
 },
 {
+    "id": 2,
     "name":"Managers",
-    "id":"managers"
+    "class":"managers"
 },
 {
+    "id": 3,
     "name":"Stores",
-    "id":"stores"
+    "class":"stores"
 },
 {
+    "id": 4,
     "name":"Message Board",
-    "id":"messageBoard"
+    "class":"messageBoard"
 },
 {
+    "id": 5,
     "name":"Calendar",
-    "id":"calendar"
+    "class":"calendar"
 },
 {
+    "id": 6,
     "name":"Repair & Maintenance",
-    "id":"repairAndMaintenance"
+    "class":"repairAndMaintenance"
 },
 {
+    "id": 7,
     "name":"Caterings",
-    "id":"caterings"
+    "class":"caterings"
 },
 {
+    "id": 8,
     "name":"Contacts",
-    "id":"contacts"
+    "class":"contacts"
 },
 {
+    "id": 9,
     "name":"RFRG Info",
-    "id":"rfrgInfo"
+    "class":"rfrgInfo"
 }]

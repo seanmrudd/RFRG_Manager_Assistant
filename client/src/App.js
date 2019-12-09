@@ -4,7 +4,6 @@ import Wrapper from './components/Wrapper';
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import MainMenu from './pages/MainMenu';
-import Navbar from './components/Navbar';
 
 function App() {
   return (

@@ -10,20 +10,19 @@ export default class Menu extends Component {
         menuOptions
     }
 
-    consoleLog = () => {
-        console.log(this.state.menuOptions.map((option) => option))
-    }
- 
     render() {
         return (
-            <div>
-                {this.state.menuOptions.map(menuOption => (
+            <div className="menuWrapper">
+                {this.state.menuOptions.map((menuOption) => (
                     <Row>
                         <Col>
                             <MenuButton
                             key={menuOption.id}
                             className={menuOption.className}
                             name={menuOption.name}
+                            id={menuOption.className}
+                            // Add hoverable icons
+                            // icon={menuOption.icon}
                             />
                         </Col>
                     </Row>

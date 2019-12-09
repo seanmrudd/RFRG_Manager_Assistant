@@ -1,4 +1,9 @@
-
 button {
-    color: red;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: block;
+}
+
+button:hover {
 }

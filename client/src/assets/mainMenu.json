@@ -1,45 +1,54 @@
 [{
     "id": 1,
-    "name":"To-Do List",
-    "className":"toDo"
+    "name": "To-Do List",
+    "className": "toDo",
+    "icon": "../../assets/images/todo.png"
 },
 {
     "id": 2,
-    "name":"Managers",
-    "class":"managers"
+    "name": "Managers",
+    "class": "managers",
+    "icon": "managers.png"
 },
 {
     "id": 3,
-    "name":"Stores",
-    "class":"stores"
+    "name": "Stores",
+    "class": "stores",
+    "icon": "stores.png"
 },
 {
     "id": 4,
-    "name":"Message Board",
-    "class":"messageBoard"
+    "name": "Message Board",
+    "class": "messageBoard",
+    "icon": "messages.png"
 },
 {
     "id": 5,
-    "name":"Calendar",
-    "class":"calendar"
+    "name": "Calendar",
+    "class": "calendar",
+    "icon": "calendar.png"
 },
 {
     "id": 6,
-    "name":"Repair & Maintenance",
-    "class":"repairAndMaintenance"
+    "name": "Repair & Maintenance",
+    "class": "repairAndMaintenance",
+    "icon": "repair.png"
 },
 {
     "id": 7,
-    "name":"Caterings",
-    "class":"caterings"
+    "name": "Caterings",
+    "class": "caterings",
+    "icon": "catering.png"
 },
 {
     "id": 8,
-    "name":"Contacts",
-    "class":"contacts"
+    "name": "Contacts",
+    "class": "contacts",
+    "icon": "contacts.png"
 },
 {
     "id": 9,
-    "name":"RFRG Info",
-    "class":"rfrgInfo"
+    "name": "RFRG Info",
+    "class": "rfrgInfo",
+    "icon": "info.png"
 }]

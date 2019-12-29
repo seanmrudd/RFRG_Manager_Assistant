@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Logo from "../../assets/images/moes_logo.jpg";
-import { Redirect } from "react-router-dom";
 import { Animated } from "react-animated-css";
 import "./style.css";
+import Menu from "../../components/Menu";
 
 export default class LandingPage extends Component {
     state = {
@@ -24,12 +24,17 @@ export default class LandingPage extends Component {
     render() {
         if (this.state.redirect) {
             return (
-                <Redirect to="menu" />
+                // <Animated animationIn="fadeIn slower" animationOut="fadeOut" isVisible={true}>
+                    <div>
+                        <h1>RFRG Manager Assistant</h1>
+                        <Menu />
+                    </div>
+                /* </Animated> */
             )
         }
 
         return (
-            <Animated animationIn="fadeIn slower" animationOut="fadeOut slower" isVisible={true}>
+            // <Animated animationIn="fadeIn slower" animationOut="fadeOut slower" isVisible={true}>
                 <div>
                     <div className="fadeOut">
                         <h1>RFRG Manager Assistant</h1>
@@ -37,7 +42,7 @@ export default class LandingPage extends Component {
                         <h5>a Shrudder Production</h5>
                     </div>
                 </div>
-            </Animated>
+            // </Animated>
         );
     }
 }

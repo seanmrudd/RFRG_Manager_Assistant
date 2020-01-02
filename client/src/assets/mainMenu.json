@@ -2,53 +2,62 @@
     "id": 1,
     "name": "To-Do List",
     "className": "toDo",
-    "icon": "../../assets/images/todo.png"
+    "icon": "../../assets/images/todo.png",
+    "link": "/todolist"
 },
 {
     "id": 2,
     "name": "Managers",
     "class": "managers",
-    "icon": "managers.png"
+    "icon": "managers.png",
+    "link": "/managers"
 },
 {
     "id": 3,
     "name": "Stores",
     "class": "stores",
-    "icon": "stores.png"
+    "icon": "stores.png",
+    "link": "/stores"
 },
 {
     "id": 4,
     "name": "Message Board",
     "class": "messageBoard",
-    "icon": "messages.png"
+    "icon": "messages.png",
+    "link": "/messageboard"
 },
 {
     "id": 5,
     "name": "Calendar",
     "class": "calendar",
-    "icon": "calendar.png"
+    "icon": "calendar.png",
+    "link": "/calendar"
 },
 {
     "id": 6,
     "name": "Repair & Maintenance",
     "class": "repairAndMaintenance",
-    "icon": "repair.png"
+    "icon": "repair.png",
+    "link": "/repairandmaintenance"
 },
 {
     "id": 7,
     "name": "Caterings",
     "class": "caterings",
-    "icon": "catering.png"
+    "icon": "catering.png",
+    "link": "/caterings"
 },
 {
     "id": 8,
     "name": "Contacts",
     "class": "contacts",
-    "icon": "contacts.png"
+    "icon": "contacts.png",
+    "link": "/contacts"
 },
 {
     "id": 9,
     "name": "RFRG Info",
     "class": "rfrgInfo",
-    "icon": "info.png"
+    "icon": "info.png",
+    "link": "/rfrginfo"
 }]

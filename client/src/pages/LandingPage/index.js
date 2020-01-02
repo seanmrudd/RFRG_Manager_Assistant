@@ -3,6 +3,7 @@ import Logo from "../../assets/images/moes_logo.jpg";
 import { Animated } from "react-animated-css";
 import "./style.css";
 import Menu from "../../components/Menu";
+import { redirect, Redirect } from 'react-router-dom';
 
 export default class LandingPage extends Component {
     state = {
@@ -24,12 +25,7 @@ export default class LandingPage extends Component {
     render() {
         if (this.state.redirect) {
             return (
-                // <Animated animationIn="fadeIn slower" animationOut="fadeOut" isVisible={true}>
-                    <div>
-                        <h1>RFRG Manager Assistant</h1>
-                        <Menu />
-                    </div>
-                /* </Animated> */
+                <Redirect to='/menu' />
             )
         }
 

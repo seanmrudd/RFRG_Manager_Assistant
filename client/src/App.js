@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Wrapper from './components/Wrapper';
 import './App.css';
 import LandingPage from './pages/LandingPage';
-// import MainMenu from './pages/MainMenu';
+import MainMenu from './pages/MainMenu';
 import Calendar from './pages/Calendar';
 import Caterings from './pages/Caterings';
 import Contacts from './pages/Contacts';
@@ -21,6 +21,7 @@ function App() {
         <Switch>
           <Wrapper>
             <Route exact path='/' component={LandingPage} />
+            <Route path='/menu' component={MainMenu} />
             <Route path='/calendar' component={Calendar} />
             <Route path='/caterings' component={Caterings} />
             <Route path='/contacts' component={Contacts} />

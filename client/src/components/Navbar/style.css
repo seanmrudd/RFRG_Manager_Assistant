@@ -1,0 +1,14 @@
+img {
+    height: 5rem;
+    width: auto;
+}
+
+.navbarLogOut {
+    color: rgb(65,65,67);
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.navbarHeader {
+    text-align: center;
+}

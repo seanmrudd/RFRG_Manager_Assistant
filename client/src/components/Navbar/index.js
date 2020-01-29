@@ -7,12 +7,10 @@ function Navbar(props) {
     return (
         <div>
             <nav className="navbar">
-                <div>
+                <div className="navbarLinks">
                     <Link to="/menu">
                         <img src={logo} alt="logo" />
                     </Link>
-                </div>
-                <div>
                     <Link to="/login"><span className="navbarLogOut">Log Out</span></Link>
                 </div>
                 <div className="navbarHeader">

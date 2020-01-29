@@ -9,6 +9,10 @@ img {
     font-family: 'Fredoka One', cursive;
 }
 
-.navbarHeader {
-    text-align: center;
+.navbarHeader1 {
+    clear: both;
+}
+
+.navbarLinks {
+    float: left;
 }

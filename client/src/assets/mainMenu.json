@@ -1,7 +1,7 @@
 [{
     "id": 1,
     "name": "To-Do List",
-    "className": "toDo",
+    "class": "toDo",
     "icon": "../../assets/images/todo.png",
     "link": "/todolist"
 },

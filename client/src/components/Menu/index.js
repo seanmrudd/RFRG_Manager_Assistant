@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 import "./style.css";
 import MenuButton from "../MenuButton";
 import Col from "../Col";
@@ -8,8 +8,37 @@ import menuOptions from "../../assets/mainMenu.json";
 
 export default class Menu extends Component {
     state = {
-        menuOptions
+        menuOptions,
+        menuBtn: ""
     }
+
+    handleBtnClick = event => {
+        event.preventDefault();
+
+        this.setState({
+            menuBtn: event.target.id
+        }, function () {
+            this.goToPage();
+        });
+        
+        // if (menuBtn==="toDo"){
+        //     alert(this.menuBtn)
+        // }
+        // switch (menuBtn) {
+        //     case "toDo":
+        //         alert("hi");
+        //         break;
+        //     case "managers":
+        //         return <Redirect to="/managers" />
+        //         break;
+        // }
+    }
+
+    goToPage = () => {
+        const history = useHistory();
+        history.push("/todolist")
+    }
+
 
     render() {
         return (
@@ -17,16 +46,17 @@ export default class Menu extends Component {
                 {this.state.menuOptions.map((menuOption) => (
                     <Row>
                         <Col>
-                            <Link to={menuOption.link}>
-                                <MenuButton
-                                    key={menuOption.id}
-                                    className={menuOption.className}
-                                    name={menuOption.name}
-                                    id={menuOption.className}
-                                // Add hoverable icons
-                                // icon={menuOption.icon}
-                                />
-                            </Link>
+                            <MenuButton
+                                key={menuOption.id}
+                                onClick={this.handleBtnClick}
+                                data-name={menuOption.class}
+                                className={menuOption.class}
+                                name={menuOption.name}
+                                id={menuOption.className}
+                            // Add hoverable icons
+                            // icon={menuOption.icon}
+                            >
+                            </MenuButton>
                         </Col>
                     </Row>
                 ))}

@@ -1,18 +1,4 @@
-img {
-    height: 5rem;
-    width: auto;
-}
-
-.navbarLogOut {
-    color: rgb(65,65,67);
-    text-align: center;
-    font-family: 'Fredoka One', cursive;
-}
-
-.navbarHeader1 {
-    clear: both;
-}
-
-.navbarLinks {
-    float: left;
+.navbar-toggler-icon {
+    background-image: url(../../assets/images/moes_logo.jpg);
+    font-size: 5rem;
 }

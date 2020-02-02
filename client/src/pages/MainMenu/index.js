@@ -13,7 +13,7 @@ export default class MainMenu extends Component {
             <Animated animationIn="fadeIn slower" animationOut="fadeOut" isVisible={true}>
                 <div>
                     <NavBar />
-                    <h1>RFRG Manager Assistant</h1>
+                    <h1>Main Menu</h1>
                     <Menu />
                 </div>
             </Animated>

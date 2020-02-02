@@ -10,6 +10,7 @@ export default class ToDoList extends Component {
                 <div>
                     <Navbar />
                     <h1>To Do List</h1>
+                    
                 </div>
         );
     }

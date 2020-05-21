@@ -25,12 +25,12 @@ export default class LandingPage extends Component {
     render() {
         if (this.state.redirect) {
             return (
-                <Redirect to='/menu' />
+                <Redirect to='/login' />
             )
         }
 
         return (
-            // <Animated animationIn="fadeIn slower" animationOut="fadeOut slower" isVisible={true}>
+            <Animated animationIn="fadeIn slower" animationOut="fadeOut slower" isVisible={true}>
                 <div>
                     <div className="fadeOut">
                         <h1>RFRG Manager Assistant</h1>
@@ -38,7 +38,7 @@ export default class LandingPage extends Component {
                         <h5>a Shrudder Production</h5>
                     </div>
                 </div>
-            // </Animated>
+            </Animated>
         );
     }
 }

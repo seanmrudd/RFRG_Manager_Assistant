@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from 'react-router-dom';
 import { Animated } from "react-animated-css";
 import "./style.css";
-// import Col from "../../components/Col";
+import Col from "../../components/Col";
 import Row from "../../components/Row";
 
 class Login extends Component {
@@ -39,10 +39,14 @@ class Login extends Component {
                     <h2>Login</h2>
                     <div className="loginBox">
                         <form className="loginForm" onSubmit={this.handleSubmit}>
-                            <div classname="loginInput">
-                                <input className="inputField" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
-                                <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
-                            </div>
+                            <Row>
+                                <div classname="loginInput">
+                                    <Col>
+                                        Username: <input className="inputField" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
+                                        Password: <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
+                                    </Col>
+                                </div>
+                            </Row>
                             <button className="loginSubmit">Login</button>
                             <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
                         </form>

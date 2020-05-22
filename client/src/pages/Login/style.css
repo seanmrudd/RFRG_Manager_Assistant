@@ -2,15 +2,26 @@
     background-color: teal;
 }
 .content {
+
 }
 
 .inputField {
 }
 
 .loginForm {
-
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: block;
 }
 
 .loginInput {
-    display: none;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: block;
+}
+
+.col {
+
 }

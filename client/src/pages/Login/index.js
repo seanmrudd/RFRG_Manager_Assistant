@@ -5,6 +5,7 @@ import { Animated } from "react-animated-css";
 import "./style.css";
 import Col from "../../components/Col";
 import Row from "../../components/Row";
+import Container from "../../components/Container";
 
 class Login extends Component {
 
@@ -35,24 +36,22 @@ class Login extends Component {
 
         return (
             <Animated animationIn="fadeIn slower" animationOut="fadeOut" isVisible={true}>
-                <div className='content'>
-                    <h2>Login</h2>
-                    <div className="loginBox">
-                        <form className="loginForm" onSubmit={this.handleSubmit}>
+                <div>
+                    <Container>
+                        <h2>Login</h2>
+                        <form onSubmit={this.handleSubmit}>
                             <Row>
-                                <div classname="loginInput">
-                                    <Col>
-                                        Username: <input className="inputField" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
-                                        Password: <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
-                                    </Col>
-                                </div>
+                                <input className="inputField" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
+                                <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
                             </Row>
-                            <button className="loginSubmit">Login</button>
-                            <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
+                            <Row>
+                                <button className="loginSubmit">Login</button>
+                                <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
+                            </Row>
                         </form>
-                            Need to make an account? <Link to="/SignUp">Click Here</Link>
+                        Need to make an account? <Link to="/SignUp">Click Here</Link>
                         <p>{this.state.errorMessage}</p>
-                    </div>
+                    </Container>
                 </div>
             </Animated>
         );

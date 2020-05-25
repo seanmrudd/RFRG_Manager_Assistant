@@ -6,20 +6,18 @@
 }
 
 .inputField {
+
+    text-align: center;
 }
 
 .loginForm {
     width: 50%;
     margin: auto;
-    margin-bottom: 2%;
-    display: block;
 }
 
 .loginInput {
     width: 50%;
-    margin: auto;
-    margin-bottom: 2%;
-    display: block;
+    margin: auto; 
 }
 
 .col {

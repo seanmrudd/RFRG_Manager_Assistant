@@ -39,17 +39,27 @@ class Login extends Component {
                 <div>
                     <Container>
                         <h2>Login</h2>
-                        <form onSubmit={this.handleSubmit}>
-                            <Row>
-                                <input className="inputField" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
-                                <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
-                            </Row>
-                            <Row>
-                                <button className="loginSubmit">Login</button>
-                                <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
-                            </Row>
-                        </form>
+                        <div className="loginBox">
+                            <form onSubmit={this.handleSubmit}>
+                                <Row>
+                                    <Col className="col-sm-6">
+                                        <input className="inputField" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
+                                    </Col>
+                                    <Col className="col-sm-6">
+                                        <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className="col-sm-6">
+                                        <button className="loginSubmit">Login</button>
+                                    </Col>
+                                    <Col className="col-sm-6">
+                                        <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
+                                    </Col>
+                                </Row>
+                            </form>
                         Need to make an account? <Link to="/SignUp">Click Here</Link>
+                        </div>
                         <p>{this.state.errorMessage}</p>
                     </Container>
                 </div>

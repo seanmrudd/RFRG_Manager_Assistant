@@ -1,12 +1,9 @@
-.loginBox {
+/* .loginBox {
     background-color: teal;
-}
-.content {
-
-}
+    padding: 20px
+} */
 
 .inputField {
-
     text-align: center;
 }
 
@@ -20,6 +17,4 @@
     margin: auto; 
 }
 
-.col {
 
-}

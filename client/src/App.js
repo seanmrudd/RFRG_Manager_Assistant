@@ -14,6 +14,7 @@ import RFRGInfo from './pages/RFRGInfo';
 import Stores from './pages/Stores';
 import ToDoList from './pages/ToDoList';
 import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path='/stores' component={Stores} />
             <Route path='/todolist' component={ToDoList} />
             <Route path='/login' component={Login} />
+            <Route path='/signup' component={SignUp} />
           </Wrapper>
         </Switch>
       </div>

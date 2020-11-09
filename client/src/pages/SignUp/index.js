@@ -6,7 +6,6 @@ import "./style.css";
 import Col from "../../components/Col";
 import Row from "../../components/Row";
 import Container from "../../components/Container";
-import passwordToggle from "../../assets/images/togglePassword.png";
 
 class Login extends Component {
 
@@ -22,7 +21,7 @@ class Login extends Component {
         event.preventDefault();
         this.setState({
             hidden: !this.state.hidden,
-            // passwordButton: !this.state.passwordButton
+            passwordButton: !this.state.passwordButton
         })
     }
 
@@ -39,7 +38,7 @@ class Login extends Component {
             <Animated animationIn="fadeIn slower" animationOut="fadeOut" isVisible={true}>
                 <div>
                     <Container>
-                        <h2>Login</h2>
+                        <h2>Sign Up</h2>
                         <div className="loginBox">
                             <form onSubmit={this.handleSubmit}>
                                 <Row>
@@ -48,16 +47,15 @@ class Login extends Component {
                                     </Col>
                                     <Col className="col-sm-6">
                                         <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
-                                        <span className="loginShowPassword" onClick={this.togglePasswordHidden}><img src={passwordToggle} alt="toggle"></img></span>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col className="col-sm-6">
                                         <button className="loginSubmit">Login</button>
                                     </Col>
-                                    {/* <Col className="col-sm-6">
+                                    <Col className="col-sm-6">
                                         <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
-                                    </Col> */}
+                                    </Col>
                                 </Row>
                             </form>
                         Need to make an account? <Link to="/SignUp">Click Here</Link>

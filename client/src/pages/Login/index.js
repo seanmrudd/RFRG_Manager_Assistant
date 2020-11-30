@@ -48,16 +48,11 @@ class Login extends Component {
                                     </Col>
                                     <Col className="col-sm-6">
                                         <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
-                                        <span className="loginShowPassword" onClick={this.togglePasswordHidden}><img src={passwordToggle} alt="toggle"></img></span>
+                                        <span className="loginShowPassword" onClick={this.togglePasswordHidden}><img className="hidePasswordImg" src={passwordToggle} alt="toggle"></img></span>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col className="col-sm-6">
-                                        <button className="loginSubmit">Login</button>
-                                    </Col>
-                                    {/* <Col className="col-sm-6">
-                                        <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
-                                    </Col> */}
+                                    <button className="loginSubmit">Login</button>
                                 </Row>
                             </form>
                         Need to make an account? <Link to="/SignUp">Click Here</Link>

@@ -3,7 +3,7 @@ import Logo from "../../assets/images/moes_logo.jpg";
 import { Animated } from "react-animated-css";
 import "./style.css";
 import Menu from "../../components/Menu";
-import { redirect, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 export default class LandingPage extends Component {
     state = {
@@ -31,7 +31,7 @@ export default class LandingPage extends Component {
 
         return (
             <Animated animationIn="fadeIn slower" animationOut="fadeOut slower" isVisible={true}>
-                <div>
+                <div className="landingContainer">
                     <div className="fadeOut">
                         <h1>RFRG Manager Assistant</h1>
                         <img src={Logo} alt="Logo"></img>

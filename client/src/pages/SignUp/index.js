@@ -6,8 +6,9 @@ import "./style.css";
 import Col from "../../components/Col";
 import Row from "../../components/Row";
 import Container from "../../components/Container";
+import passwordToggle from "../../assets/images/togglePassword.png";
 
-class Login extends Component {
+class SignUp extends Component {
 
     state = {
         username: "",
@@ -21,7 +22,6 @@ class Login extends Component {
         event.preventDefault();
         this.setState({
             hidden: !this.state.hidden,
-            passwordButton: !this.state.passwordButton
         })
     }
 
@@ -47,18 +47,14 @@ class Login extends Component {
                                     </Col>
                                     <Col className="col-sm-6">
                                         <input className="inputField" type={this.state.hidden ? "password" : "text"} name="password" placeholder="Password" onChange={this.handleChange} />
+                                        <span className="loginShowPassword" onClick={this.togglePasswordHidden}><img className="hidePasswordImg" src={passwordToggle} alt="toggle"></img></span>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col className="col-sm-6">
-                                        <button className="loginSubmit">Login</button>
-                                    </Col>
-                                    <Col className="col-sm-6">
-                                        <button className="loginShowPassword" onClick={this.togglePasswordHidden}>{this.state.passwordButton ? "Show Password" : "Hide Password"}</button>
-                                    </Col>
+                                    <button className="loginSubmit">Sign Up</button>
                                 </Row>
                             </form>
-                        Need to make an account? <Link to="/SignUp">Click Here</Link>
+                        Already have an account? <Link to="/Login">Click Here</Link>
                         </div>
                         <p>{this.state.errorMessage}</p>
                     </Container>
@@ -68,4 +64,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default SignUp;

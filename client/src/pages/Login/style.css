@@ -1,7 +1,7 @@
-/* .loginBox {
+.loginBox {
     background-color: teal;
     padding: 20px
-} */
+}
 
 .inputField {
     text-align: center;
@@ -17,11 +17,24 @@
     margin: auto; 
 }
 
-
 .loginShowPassword {
-    float: right;
-    margin-left: -25px;
-    margin-top: -25px;
+    position: absolute;
+}
+
+.loginSubmit {
+    margin: auto;
+    width: 25%;
+}
+
+.hidePasswordImg {
     position: relative;
-    z-index: 2;
-  }
+    width: 200%;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #ff8c00;
+}
